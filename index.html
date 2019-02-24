@@ -43,17 +43,26 @@
 </head>
 <body>
 
-<h1>Custom Range Slider</h1>
-<p>Drag the slider to display the current value.</p>
+<h1>progressd</h1>
+<p>Drag the slider to update your progress on your goal!</p>
+
+<b>
+<b>
+<b>
+
+
 
 <div class="slidecontainer">
-  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-  <p>Value: <span id="demo"></span></p>
+  <input type="range" min="1" max="100" value="0" class="slider" id="myRange">
+  <p>Progress: $<span id="demo"></span> of </p>
+  <input type="text" id="goal">
 </div>
 
 <script>
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
+var goalIn = document.getElementById("goal");
+var goalOut = document.getElementById("total");
 output.innerHTML = slider.value;
 
 slider.oninput = function() {
