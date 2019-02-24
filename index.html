@@ -46,15 +46,17 @@
 <h1>progressd</h1>
 <p>Drag the slider to update your progress on your goal!</p>
 
-<b>
-<b>
-<b>
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 <div class="slidecontainer">
   <input type="range" min="1" max="100" value="0" class="slider" id="myRange">
-  <p>Progress: $<span id="demo"></span> of </p>
+  <p>So far, I've raised <span id="demo"></span>% of my goal of</p>
   <input type="text" id="goal">
 </div>
 
@@ -63,11 +65,21 @@ var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
 var goalIn = document.getElementById("goal");
 var goalOut = document.getElementById("total");
-output.innerHTML = slider.value;
 
 slider.oninput = function() {
   output.innerHTML = this.value;
 }
+
+function sayGoal(){
+  var txtName = document.getElementById("fname");
+  var txtGoal = document.getElementById("fgoal");
+  var txtOutput = document.getElementById("goalOutput");
+  var name = txtName.value;
+  var goal = txtGoal.value;
+  txtOutput.value = goal + "!"
+  } 
+
+
 </script>
 
 </body>
