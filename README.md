@@ -1,6 +1,6 @@
 # progressd
 
-(org)anize is a tool for anyone to track progress on a goal and take a screenshot to share an easy graphic of their progress. 
+progressd is a tool for anyone to track progress on a goal and take a screenshot to share an easy graphic of their progress. 
 
 
 ## Built With
